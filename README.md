@@ -18,6 +18,10 @@ cd react-games\src
 del *
 cd ..
 ```
+* 安裝express
+```
+npm install express --save
+```
 * 安裝React Router
 ```
 npm install react-router-dom

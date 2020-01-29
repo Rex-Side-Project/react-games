@@ -4,8 +4,8 @@ import { TicTacToe } from './TicTacToe';
 import { SurroundTheTerritory } from './SurroundTheTerritory';
 
 const GamesRouteList = [
-    { path: "/TicTacToe", name: "Tic-Tac-Toe", component: TicTacToe },
-    { path: "/SurroundTheTerritory", name: "SurroundTheTerritory", component: SurroundTheTerritory }
+    { path: "/Game/TicTacToe", name: "Tic-Tac-Toe", component: TicTacToe },
+    { path: "/Game/SurroundTheTerritory", name: "SurroundTheTerritory", component: SurroundTheTerritory }
 ]
 
 class GamesList extends Component {
@@ -26,6 +26,19 @@ class GamesList extends Component {
     }
 }
 
+class Index extends Component {
+    render() {
+        return (
+            <div>
+                <h1>Hello</h1>
+                <ol>
+                    <li><Link to="/GamesList">GamesList</Link></li>
+                </ol>
+            </div>
+        )
+    }
+}
+
 class NoGame extends Component {
     render() {
         return (
@@ -38,7 +51,8 @@ class NoGame extends Component {
 
 class Games extends Component {
     render() {
-        const gameList = [(<Route path="/" key="GamesList" exact component={GamesList} />)] // 首頁
+        const gameList = [(<Route path="/" key="index" exact component={Index} />)] // 首頁
+            .concat([(<Route path="/GamesList" key="GamesList" component={GamesList} />)]) // GameList
             .concat(GamesRouteList.map((game) => {
                 return (<Route key={game.name} path={game.path} component={game.component} />)
             }))

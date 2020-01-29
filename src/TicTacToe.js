@@ -122,7 +122,7 @@ class TicTacToeGame extends React.Component {
 
         return (
             <div className="content">
-                <Link to="/">Back To List</Link>
+                <Link to="/GamesList/">Back To List</Link>
                 <div className="game">
                     <div className="game-board">
                         <Board

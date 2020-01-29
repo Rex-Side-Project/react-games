@@ -18,7 +18,7 @@ class SurroundTheTerritoryGame extends React.Component {
     render() {
         return (
             <div className="content">
-                <Link to="/">Back To List</Link>
+                <Link to="/GamesList/">Back To List</Link>
                 <div className="game">
                 </div>
                 <div>
