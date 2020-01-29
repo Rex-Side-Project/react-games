@@ -15,7 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm install --only=dev && npm install"
   },
   "engines": {
     "node": "~6.10.3",
