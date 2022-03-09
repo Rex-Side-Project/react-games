@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
-import { TicTacToe } from './TicTacToe';
-import { SurroundTheTerritory } from './SurroundTheTerritory';
+import { TicTacToe } from './TicTacToe/TicTacToe';
 
 const GamesRouteList = [
     { path: "/Game/TicTacToe", name: "Tic-Tac-Toe", component: TicTacToe },
-    { path: "/Game/SurroundTheTerritory", name: "SurroundTheTerritory", component: SurroundTheTerritory }
 ]
 
 class GamesList extends Component {
