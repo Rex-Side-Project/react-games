@@ -143,13 +143,6 @@ class TicTacToeGame extends React.Component {
     }
 }
 
-// ========================================
-
-// ReactDOM.render(
-//     <TicTacToeGame />,
-//     document.getElementById('root')
-// );
-
 const TicTacToe = () => {
     return (<TicTacToeGame />);
 }
