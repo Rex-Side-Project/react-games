@@ -1,28 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link, Switch } from 'react-router-dom';
-import { TicTacToe } from './TicTacToe/TicTacToe';
-
-const GamesRouteList = [
-    { path: "/Game/TicTacToe", name: "Tic-Tac-Toe", component: TicTacToe },
-]
-
-class GamesList extends Component {
-    render() {
-        const gameList = GamesRouteList.map((game) => {
-            return (<li key={game.name}><Link to={game.path}>{game.name}</Link></li>)
-        })
-
-        return (
-            <div>
-                <h1>Games List</h1>
-                <ol>
-                    {/* <li><Link to="/TicTacToe">Tic-Tac-Toe</Link></li> */}
-                    {gameList}
-                </ol>
-            </div>
-        )
-    }
-}
+import { GamesList, NoGame, GamesRouteList } from './Games/Games';
 
 class Index extends Component {
     render() {
@@ -37,17 +15,7 @@ class Index extends Component {
     }
 }
 
-class NoGame extends Component {
-    render() {
-        return (
-            <div className="noGameStyle">
-                No This Game
-            </div>
-        )
-    }
-}
-
-class Games extends Component {
+class App extends Component {
     render() {
         const gameList = [(<Route path="/" key="index" exact component={Index} />)] // 首頁
             .concat([(<Route path="/GamesList" key="GamesList" component={GamesList} />)]) // GameList
@@ -70,4 +38,4 @@ class Games extends Component {
     }
 }
 
-export default Games;
+export default App;

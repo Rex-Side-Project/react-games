@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
-import Games from './Games';
+// import Games from './Games';
+import App from './App';
 
 ReactDOM.render(
     <BrowserRouter>
-        <Games />
+        <App />
     </BrowserRouter>,
     document.getElementById('root')
 );
