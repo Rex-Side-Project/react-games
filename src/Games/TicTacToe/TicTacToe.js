@@ -23,7 +23,6 @@ class Board extends React.Component {
     render() {
         return (
             <div>
-                {/* <div className="status">{status}</div> */}
                 <div className="board-row">
                     {this.renderSquare(0)}
                     {this.renderSquare(1)}
@@ -44,7 +43,7 @@ class Board extends React.Component {
     }
 }
 
-class TicTacToeGame extends React.Component {
+class TicTacToe extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -141,10 +140,6 @@ class TicTacToeGame extends React.Component {
             </div>
         );
     }
-}
-
-const TicTacToe = () => {
-    return (<TicTacToeGame />);
 }
 
 export { TicTacToe };

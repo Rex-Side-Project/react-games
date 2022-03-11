@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link, Route } from 'react-router-dom';
 import { TicTacToe } from './TicTacToe/TicTacToe';
 
+import './Games.css';
+
 const Games = [
     { path: "/Game/TicTacToe", name: "Tic-Tac-Toe", component: TicTacToe }
 ]

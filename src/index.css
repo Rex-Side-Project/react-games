@@ -1,7 +1,7 @@
 body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
-  background: rgb(20,138,152);
+  background: rgb(20, 138, 152);
   height: calc(100vh - 40px);
   color: white;
 }
@@ -13,12 +13,7 @@ a {
 ol, ul {
   padding-left: 30px;
 }
+
 li {
   margin-bottom: 10px;
-}
-
-.noGameStyle{
-  font-size: 20vmin;
-  text-align: center;
-  margin-top: 20vh;
 }
