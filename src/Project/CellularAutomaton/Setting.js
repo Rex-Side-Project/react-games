@@ -12,14 +12,15 @@ class Setting extends Component {
     Save() {
         var setting = {
             boardRowSize: this.state.boardRowSize,
-            boardColSize: this.state.boardColSize
+            boardColSize: this.state.boardColSize,
+            cellStatus: [{
+                color: 'rgb(255, 255, 255, 0.5)'
+            },
+            {
+                color: '#FFFFFF'
+            }]
         }
         this.props.UpdateSetting(setting)
-
-        // this.props.UpdateSetting({
-        //     boardRowSize: 5,
-        //     boardColSize: 60
-        // })
     }
 
     render() {
@@ -31,7 +32,7 @@ class Setting extends Component {
 
                 <div className='form'>
                     <div className='inputGroup'>
-                        <label></label>
+                        <label>Board Size</label>
                         <div className='inputs'>
                             <input type="number" placeholder='Row'
                                 value={this.state.boardRowSize}

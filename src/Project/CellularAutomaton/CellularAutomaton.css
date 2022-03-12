@@ -5,7 +5,16 @@
 }
 
 .CellularAutomaton .title {
+    display: inline-block;
+}
+.CellularAutomaton .actionFun {
+    display: flex;
     width: 100%;
+}
+.CellularAutomaton .actionFun .funBtns{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 .setting {
